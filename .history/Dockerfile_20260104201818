@@ -29,7 +29,6 @@ RUN echo '#!/bin/sh' > /start.sh && \
     echo '  "HOST": "${HOST}",' >> /start.sh && \
     echo '  "APIKEY": "${APIKEY}",' >> /start.sh && \
     echo '  "LOG": ${LOG},' >> /start.sh && \
-    echo '  "LOG_LEVEL": "${LOG_LEVEL}",' >> /start.sh && \
     echo '  "NON_INTERACTIVE_MODE": ${NON_INTERACTIVE_MODE},' >> /start.sh && \
     echo '  "Providers": [],' >> /start.sh && \
     echo '  "Router": {' >> /start.sh && \

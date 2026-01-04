@@ -11,11 +11,11 @@ services:
       - HOST=0.0.0.0
       - APIKEY=${APIKEY:-your-secret-key-please-change-this}
       - LOG=true
-      - LOG_LEVEL=debug
       - NON_INTERACTIVE_MODE=true
       # 可选配置 - 取消注释以使用
       # - PROXY_URL=http://127.0.0.1:7890
       # - API_TIMEOUT_MS=600000
+      # - LOG_LEVEL=debug
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:3456/health"]
